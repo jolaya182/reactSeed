@@ -1,0 +1,55 @@
+/**
+ * Splash's color schema:
+ * https://color.adobe.com/create/color-wheel/?base=2&rule=Custom&selected=2&name=My%20Color%20Theme&mode=hsv&rgbvalues=0,0,0,0.2980392156862745,0.36470588235294116,0.9372549019607843,0.9254901960784314,0.9254901960784314,0.9254901960784314,0.17254901960784313,0.12156862745098039,0.1843137254901961,0.9372549019607843,0.3058823529411765,0.3176470588235294&swatchOrder=0,3,1,4,2
+ */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+html, body, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root-container {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ECECEC;
+}
+.header-inner {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+h1 {
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+.user-avatar {
+    width: 3rem;
+    height: 3rem;
+    background-image: url('https://d24wuq6o951i2g.cloudfront.net/img/events/splash/cat2.png');
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid #ECECEC;
+    border-radius: 50%;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ECECEC;
+}
+
